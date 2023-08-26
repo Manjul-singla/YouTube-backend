@@ -9,7 +9,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 // Connect to DATABASE
-const DATABASE_URL = "mongodb://localhost/subscribers";
+// const DATABASE_URL = "mongodb://localhost/subscribers";
+const DATABASE_URL =
+  "mongodb+srv://moneypalwal:moneypalwal@cluster0.hifqgrb.mongodb.net/";
 mongoose.connect(DATABASE_URL, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
